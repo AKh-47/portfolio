@@ -15,17 +15,6 @@ function MyApp({ Component, pageProps }: AppProps) {
 
         <title>Akhil Kala | Web Developer</title>
       </Head>
-      <div className="hamburger">
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-      </div>
-      <nav className="navbar">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
       <ToastProvider placement="top-center" autoDismissTimeout="1200">
         <Component {...pageProps} />
       </ToastProvider>

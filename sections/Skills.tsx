@@ -17,21 +17,18 @@ export default function Skills({ skills }: Props): ReactElement {
       <main>
         <section>
           <h2>Front End</h2>
-          <img src="/skills/react.png" alt="" className="background" />
           {skills.frontEnd.map((skill) => (
             <Skill name={skill} />
           ))}
         </section>
         <section>
           <h2>Back End</h2>
-          <img src="/skills/node.js.png" alt="" className="background" />
           {skills.backEnd.map((skill) => (
             <Skill name={skill} />
           ))}
         </section>
         <section>
           <h2>Miscellaneous</h2>
-          <img src="/skills/python.png" alt="" className="background" />
           {skills.misc.map((skill) => (
             <Skill name={skill} />
           ))}

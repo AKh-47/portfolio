@@ -1,4 +1,4 @@
-import React, { ReactElement, Fragment } from "react";
+import React, { ReactElement, Fragment } from 'react';
 
 interface Props {
   projects: IProject[];
@@ -11,6 +11,7 @@ interface IProject {
   image: string;
   repo: string;
   site: string;
+  ongoing: boolean;
 }
 
 interface IProjectProps extends IProject {
@@ -25,7 +26,7 @@ export default function Projects({ projects }: Props): ReactElement {
       <div id="projects" className="projects">
         <h1>Projects</h1>
         {projects.map((project, i) => (
-          <Project alt={i % 2 != 0} {...project} />
+          <Project key={i} alt={i % 2 != 0} {...project} />
         ))}
       </div>
       <div className="projects-more"></div>
@@ -34,25 +35,29 @@ export default function Projects({ projects }: Props): ReactElement {
 }
 
 function Project({
-  alt,
   name,
   description,
   stack,
   image,
   repo,
   site,
+  ongoing,
 }: IProjectProps): ReactElement {
   return (
-    <div className={`project ${alt ? "alt" : ""}`}>
+    <div className="project">
       <img className="image" src="/projects/typeracer.png" />
       <div className="content">
         <h2>
           {name}
-          {/* <span>Ongoing</span> */}{" "}
+          {ongoing && <span>Ongoing</span>}
         </h2>
         <div className="stack">
           {stack.map((tech) => (
-            <img src={`/skills/${tech.toLowerCase()}.png`} alt={tech} />
+            <img
+              key={tech}
+              src={`/skills/${tech.toLowerCase()}.png`}
+              alt={tech}
+            />
           ))}
         </div>
         <p>{description}</p>

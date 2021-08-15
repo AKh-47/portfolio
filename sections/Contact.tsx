@@ -1,11 +1,15 @@
-import React, { ReactElement, useRef, useState } from "react";
-import axios from "axios";
+import React, { ReactElement, useRef, useState } from 'react';
+import axios from 'axios';
 
-import { useToasts } from "react-toast-notifications";
+import { useToasts } from 'react-toast-notifications';
 
-interface Props {}
+function validateEmail(email: string) {
+  const re =
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+}
 
-export default function Contact({}: Props): ReactElement {
+export default function Contact(): ReactElement {
   const nameRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
@@ -19,20 +23,23 @@ export default function Contact({}: Props): ReactElement {
 
     const errorsArr = [];
 
-    if (!emailRef.current.value) errorsArr.push("Email is required");
+    if (!emailRef.current.value) errorsArr.push('Email is required');
+
+    if (!validateEmail(emailRef.current.value))
+      errorsArr.push('Email is not valid');
 
     if (errorsArr.length === 0) {
-      const { data: sent } = await axios.post("/api/mail", {
+      const { data: sent } = await axios.post('/api/mail', {
         name: nameRef.current.value,
         email: emailRef.current.value,
         message: messageRef.current.value,
       });
 
       if (sent) {
-        addToast("Mail Sent Successfully", { appearance: "success" });
+        addToast('Mail Sent Successfully', { appearance: 'success' });
         setErrors([]);
       } else {
-        addToast("Error", { appearance: "error" });
+        addToast('Error', { appearance: 'error' });
       }
     } else {
       setErrors(errorsArr);

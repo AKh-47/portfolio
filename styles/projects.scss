@@ -1,6 +1,8 @@
 .projects{
     font-family: $font-family, sans-serif, serif;
     padding: 5rem 4rem 2rem 4rem;
+    background-color: #111;
+    color: #fff;
 
        @include respond(tab-port2){
         padding: 5rem 3rem 2rem 3rem;
@@ -72,7 +74,7 @@
 
 
     .project{
-        background-color: #282828;
+        background-color: #1a1a1a;
         border-radius: 10px;
         padding: 2rem;
         display: flex;
@@ -81,7 +83,7 @@
         position: relative;
 
 
-        
+
         @include respond(medium-phone){
             flex-direction: column;
             align-items: center;
@@ -104,7 +106,10 @@
             width: 25rem;
             max-width: 100%;
             min-height: 15rem;
-            border-radius: 15px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
         }
 
 
@@ -135,10 +140,13 @@
             span{
                 display: inline-block;
                 font-size: 1rem;
-                color: orangered;
+                color: #ddd;
             background-color: #343434;
+            padding: .5rem 1rem;
             margin-left: 1rem;
             transform: translateY(-.4rem);
+            opacity: .7;
+            border-radius: 5px;
             }
 
         }
@@ -191,40 +199,6 @@
         }
         }
 
-
-    }
-
-    .alt{
-        img{
-            order: 1;
-
-            @include respond(medium-phone){
-                order: -1;
-
-                 }
-    
-        }
-
-        h2{
-            text-align: right;
-            margin-left: 1rem;
-        }
-
-        .content{
-            text-align: right;
-            @include respond(medium-phone){
-                text-align: center;
-                 }
-        }
-
-        .links{
-
-            @media (min-width: 40.625em) {
-                left: 0;
-
-              }
-
-        }
 
     }
 

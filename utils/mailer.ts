@@ -1,5 +1,6 @@
 import nodemailer from "nodemailer";
 import dotenv from "dotenv";
+import aws from "aws-sdk";
 
 dotenv.config();
 
@@ -8,6 +9,11 @@ interface Props {
   email: string;
   message: string;
 }
+
+// SMTP Username:
+// AKIAZS3FX6J2D22C55YJ
+// SMTP Password:
+// BCh6GRR55koAO/IW0yW7CRG8onz9hkMyJYR0rrGLdM71
 
 export default async ({ name, email, message }: Props) => {
   if (!process.env.EMAIL || !process.env.PASS) {
@@ -39,7 +45,7 @@ export default async ({ name, email, message }: Props) => {
       (err, info) => {
         console.log(info);
 
-        if (err) reject(new Error("Coudn't Send Mail"));
+        if (err) reject(err);
         else resolve(info);
       }
     );

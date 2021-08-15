@@ -1,19 +1,30 @@
 import React, { ReactElement } from "react";
+import Lottie from "react-lottie";
 
 interface Props {
   resume: string;
 }
 
+const defaultOptions = (animation: string) => ({
+  loop: true,
+  autoplay: true,
+  animationData: require(`../public/animations/${animation}.json`),
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+});
+
 export default function Home({ resume }: Props): ReactElement {
   return (
     <div className="home">
-      <div className="code">
+      {/* <div className="code">
         <i className="fas fa-code"></i>
-      </div>
+      </div> */}
+      <Lottie options={defaultOptions("coding_man")} height={150} width={150} />
       <h1>Hello!</h1>
-      <h1>I am Akhil Kala.</h1>
+      <h1>I am Akhil Kala,</h1>
       <h1>
-        I am a full stack <span>Web Developer</span>.
+        A full stack <span>Web Developer</span>.
       </h1>
       <div className="social">
         <a href="https://github.com/akh-47">

@@ -1,6 +1,8 @@
 .contact{
     font-family: $font-family, sans-serif, serif;
     padding: 5rem 4rem 1rem 4rem;
+    background-color: #111;
+    color: #fff;
 
 
     @media (max-width: 424px) {
@@ -17,9 +19,11 @@
 
 
     footer{
-        background-color: #212121;
+        background-color: $body-bg;
         text-align: center;
         margin: 1rem 0 .5rem 0;
+        background-color: #111;
+        color: #fff;
 
     }
 
@@ -184,7 +188,7 @@
             // width: 65%;
             border-radius: 5px;
             font-size: 1.5rem;
-            background-color: #fffe;
+            background-color: #fff;
         }
 
         textarea{

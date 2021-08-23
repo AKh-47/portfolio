@@ -1,14 +1,4 @@
-@keyframes scroll-dot{
 
-    40%{
-        bottom: 1.65rem;
-
-    }
-
-    100%{
-        bottom: .5rem;
-    }
-}
 
 @keyframes rotate{
 
@@ -33,6 +23,7 @@
     justify-content: center;
     position: relative;
 
+
     @include respond(tiny-phone2){
         padding: 5rem 2rem;
     }
@@ -40,36 +31,6 @@
 
 
 
-    .code{
-        font-size: 8rem;
-        z-index: -1;
-        opacity: .05;
-        animation: rotate 2.5s linear infinite;
-
-        @include respond(tab-port2){
-            font-size: 22rem;
-    
-            }
-
-            @include respond(phone2){
-                font-size: 18rem;
-        
-                }
-
-                @include respond(small-phone2){
-                    font-size: 16rem;                 
-                     }
-
-                     @media (max-width: 405px) {
-           font-size: 14rem;                 
-
-                
-                  
-                    }
-
-           
-
-    }
 
 
     h1{
@@ -146,7 +107,7 @@
     .indicator{
         height: 2.5rem;
         width: 1.2rem;
-        border: 2px solid #fefefe;
+        border: 2px solid #fefefe88;
         border-radius: 25px;
         position: absolute;
         bottom: 2rem;
@@ -173,9 +134,10 @@
         display: flex;
         justify-content: space-between;
         cursor: pointer;
-        border: 1px solid #fefefe;
+        border: 1px solid #333;
         padding: .35rem 1.25rem;
         border-radius: 5px;
+        transition: .2s all;
         
         i{
             font-size: 1.25rem;
@@ -184,7 +146,6 @@
 
         &:hover{
             @include text-gradient;
-            border: 1px solid #2bdce3;
         }
     }
 

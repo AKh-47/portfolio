@@ -1,6 +1,8 @@
 .skills{
     font-family: $font-family, sans-serif, serif;
     padding: 5rem 4rem;
+    background-color: #111;
+    color: #fff;
 
 
     @include respond(tiny-phone2){
@@ -69,9 +71,7 @@
 
         section{
         // border: 1px solid #fefefe;
-        background-color: #282828;
-        background-color: #fff;
-        box-shadow: 2px 2px 15px #0002;
+        background-color: #1a1a1a;
         margin: 0 1rem;
         border-radius: 10px;
 padding: 1.5rem;
@@ -105,13 +105,12 @@ padding: 1.5rem;
     .skill{
         display: flex;
         align-items: center;
-        background-color: #212121;
+        background-color: #222;
         // background-color: #121212;
         margin: 1rem 0;
         padding: .8rem;
         border-radius: 10px;
-        background-color: #fff;
-        box-shadow: 2px 2px 5px #0002;
+
 
 
         img{

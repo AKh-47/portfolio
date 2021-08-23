@@ -1,4 +1,7 @@
-import React, { ReactElement, Fragment } from 'react';
+import React, { ReactElement, Fragment } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
+import Animate from "animate.css-react";
+import "animate.css/animate.css";
 
 interface Props {
   projects: IProject[];
@@ -19,12 +22,12 @@ interface IProjectProps extends IProject {
 }
 
 export default function Projects({ projects }: Props): ReactElement {
-  console.log(projects);
-
   return (
     <Fragment>
       <div id="projects" className="projects">
-        <h1>Projects</h1>
+        <ScrollAnimation animateIn="fadeIn">
+          <h1 className="animate__backInLeft">Projects</h1>
+        </ScrollAnimation>
         {projects.map((project, i) => (
           <Project key={i} alt={i % 2 != 0} {...project} />
         ))}
@@ -45,7 +48,7 @@ function Project({
 }: IProjectProps): ReactElement {
   return (
     <div className="project">
-      <img className="image" src="/projects/typeracer.png" />
+      <img className="image" src={image} />
       <div className="content">
         <h2>
           {name}

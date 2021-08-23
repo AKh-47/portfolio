@@ -20,37 +20,47 @@ interface Data {
 }
 
 const data: Data = {
-  resume: "/Akhil's Resume.pdf",
+  resume: '/resume.pdf',
   projects: [
     {
-      name: 'TypeRacer clone',
-      image: '/projects/typeracer.png',
+      name: 'Design Portal',
+      image: '/projects/prism.png',
       description:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad esse id voluptate fuga minus ab quia nam cumque officiis animi recusandae molestiae doloribus beatae ex culpa deserunt optio, neque soluta.',
-      stack: [
-        'React',
-        'TypeScript',
-        'Sass',
-        'Node.js',
-        'Express.js',
-        'MongoDB',
-        'GraphQL',
-        'Socket.io',
-      ],
+      stack: ['React', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB'],
       repo: 'https://github.com/JeremyBearimy83/typeracer-clone/tree/master',
       site: 'https://github.com/JeremyBearimy83/typeracer-clone/tree/master',
-      ongoing: true,
+      ongoing: false,
     },
-
     {
-      name: 'TypeRacer clone',
-      image: '',
+      name: 'Coder',
+      image: '/projects/coder.png',
       description:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad esse id voluptate fuga minus ab quia nam cumque officiis animi recusandae molestiae doloribus beatae ex culpa deserunt optio, neque soluta.',
       stack: ['React', 'Node.js'],
       repo: 'https://github.com/JeremyBearimy83/typeracer-clone/tree/master',
       site: '',
+      ongoing: true,
+    },
+    {
+      name: 'Hawkeye',
+      image: '/projects/hawk.png',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad esse id voluptate fuga minus ab quia nam cumque officiis animi recusandae molestiae doloribus beatae ex culpa deserunt optio, neque soluta.',
+      stack: ['React', 'Node.js'],
+      repo: 'https://github.com/akhilkala/coder',
+      site: '',
       ongoing: false,
+    },
+    {
+      name: 'TypeRacer',
+      image: '/projects/typeracer.png',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad esse id voluptate fuga minus ab quia nam cumque officiis animi recusandae molestiae doloribus beatae ex culpa deserunt optio, neque soluta.',
+      stack: ['React', 'Node.js'],
+      repo: 'https://github.com/akhilkala/coder',
+      site: '',
+      ongoing: true,
     },
   ],
   about:

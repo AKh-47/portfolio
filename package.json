@@ -8,11 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
+    "animate.css-react": "^1.1.0",
     "aws-sdk": "^2.876.0",
     "axios": "^0.21.1",
     "next": "10.0.4",
     "nodemailer": "^6.4.17",
     "react": "17.0.1",
+    "react-animate-on-scroll": "^2.1.5",
     "react-dom": "17.0.1",
     "react-ga": "^3.3.0",
     "react-lottie": "^1.2.3",

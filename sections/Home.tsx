@@ -17,9 +17,6 @@ const defaultOptions = (animation: string) => ({
 export default function Home({ resume }: Props): ReactElement {
   return (
     <div className="home">
-      {/* <div className="code">
-        <i className="fas fa-code"></i>
-      </div> */}
       <Lottie options={defaultOptions("coding_man")} height={150} width={150} />
       <h1>Hello!</h1>
       <h1>I am Akhil Kala,</h1>

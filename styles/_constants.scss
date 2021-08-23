@@ -2,12 +2,11 @@
 
 
 $body-bg: #212121;
-$body-bg: #1e1e1e;
-$body-bg: #fff;
+$body-bg: #111;
 $text-color: #fefefe;
-$text-color: #111;
 $font-family: "Nunito";
-$gradient: linear-gradient(#2bdce3, #42ffdf);
+
+$gradient: linear-gradient(#7bc74d, #71db2f);
 
 @mixin text-gradient {
     background: $gradient;

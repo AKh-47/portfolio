@@ -27,44 +27,44 @@
         }
 
 
-        &::after{
-            content: "About";
-            position: absolute;
-            font-size: 15rem;
-        opacity: .05;
-        left: 0;
-        top: -4rem;
-        z-index: -1;
+        // &::after{
+        //     content: "About";
+        //     position: absolute;
+        //     font-size: 15rem;
+        // opacity: .05;
+        // left: 0;
+        // top: -4rem;
+        // z-index: -1;
 
-        @media (max-width: 640px) {
-            font-size: 12rem;
+        // @media (max-width: 640px) {
+        //     font-size: 12rem;
 
-        }
-
-
-        @media (max-width: 550px) {
-            font-size: 10rem;
-        top: -2rem;
+        // }
 
 
-        }
-
-        @media (max-width: 460px) {
-            font-size: 9rem;
-        top: -1rem;
+        // @media (max-width: 550px) {
+        //     font-size: 10rem;
+        // top: -2rem;
 
 
-        }
+        // }
 
-        @media (max-width: 420px) {
-            font-size: 7.5rem;
-        top: -1rem;
+        // @media (max-width: 460px) {
+        //     font-size: 9rem;
+        // top: -1rem;
 
 
-        }
+        // }
+
+        // @media (max-width: 420px) {
+        //     font-size: 7.5rem;
+        // top: -1rem;
+
+
+        // }
 
         
-        }
+        // }
     }
 
     main{

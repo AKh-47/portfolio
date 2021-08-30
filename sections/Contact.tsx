@@ -68,15 +68,6 @@ export default function Contact(): ReactElement {
           </div>
           <button>Submit</button>
         </form>
-        <div className="right">
-          <img
-            // src="https://media.giphy.com/media/3oz8xSwIOv5FGhZFjq/giphy.gif"
-            src="/mail.gif"
-            alt=""
-            // http://www.online-image-editor.com/
-            // https://giphy.com/
-          />
-        </div>
       </main>
       <div className="social">
         <a href="https://github.com/akh-47">

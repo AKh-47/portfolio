@@ -107,7 +107,7 @@
     .indicator{
         height: 2.5rem;
         width: 1.2rem;
-        border: 2px solid #fefefe88;
+        border: 2px solid #1118;
         border-radius: 25px;
         position: absolute;
         bottom: 2rem;
@@ -152,3 +152,19 @@
 
 }
 
+
+.contact h1 , .projects h1 , .skills h1 {
+    // position: relative;
+    // margin-left: 3rem;
+    // &::after{
+    //     content: "";
+    //     width: 2rem;
+    //     height: 2rem;
+    //     border-radius: 50%;
+    //     background-color: $gradient;
+    //     position: absolute;
+    //     left: -3rem;
+    //     top: 50%;
+    //     transform: translateY(-50%);
+    // }
+}

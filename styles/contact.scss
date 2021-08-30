@@ -1,8 +1,6 @@
 .contact{
     font-family: $font-family, sans-serif, serif;
     padding: 5rem 4rem 1rem 4rem;
-    background-color: #111;
-    color: #fff;
 
 
     @media (max-width: 424px) {
@@ -19,11 +17,10 @@
 
 
     footer{
-        background-color: $body-bg;
         text-align: center;
         margin: 1rem 0 .5rem 0;
-        background-color: #111;
-        color: #fff;
+        background-color: $body-bg;
+        color: #212121;
 
     }
 
@@ -138,37 +135,37 @@
 
 
 
-        &::after{
-            content: "Contact";
-            position: absolute;
-            font-size: 15rem;
-        opacity: .05;
-        left: 0;
-        top: -4rem;
-        z-index: -1;
+    //     &::after{
+    //         content: "Contact";
+    //         position: absolute;
+    //         font-size: 15rem;
+    //     opacity: .05;
+    //     left: 0;
+    //     top: -4rem;
+    //     z-index: -1;
 
-        @media (max-width: 640px) {
-            font-size: 12rem;
-            top: -3rem;
-        }
+    //     @media (max-width: 640px) {
+    //         font-size: 12rem;
+    //         top: -3rem;
+    //     }
 
-        @media (max-width: 510px) {
-            font-size: 10.5rem;
-            top: -2rem;
-        }
-
-
-        @media (max-width: 460px) {
-            font-size: 8.5rem;
-            top: -1rem;
-        }
+    //     @media (max-width: 510px) {
+    //         font-size: 10.5rem;
+    //         top: -2rem;
+    //     }
 
 
-        @media (max-width: 370px) {
-            font-size: 7rem;
+    //     @media (max-width: 460px) {
+    //         font-size: 8.5rem;
+    //         top: -1rem;
+    //     }
+
+
+    //     @media (max-width: 370px) {
+    //         font-size: 7rem;
            
-        }
-        }
+    //     }
+    //     }
     }
 
     .input{

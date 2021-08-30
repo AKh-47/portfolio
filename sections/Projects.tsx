@@ -25,9 +25,9 @@ export default function Projects({ projects }: Props): ReactElement {
   return (
     <Fragment>
       <div id="projects" className="projects">
-        <ScrollAnimation animateIn="fadeIn">
+        {/* <ScrollAnimation animateIn="fadeIn"> */}
           <h1 className="animate__backInLeft">Projects</h1>
-        </ScrollAnimation>
+        {/* </ScrollAnimation> */}
         {projects.map((project, i) => (
           <Project key={i} alt={i % 2 != 0} {...project} />
         ))}

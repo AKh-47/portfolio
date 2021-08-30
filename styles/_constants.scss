@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
 
-$body-bg: #212121;
-$body-bg: #111;
-$text-color: #fefefe;
+$body-bg: #eee;
+$text-color: #111;
 $font-family: "Nunito";
 
-$gradient: linear-gradient(#7bc74d, #71db2f);
+$gradient: #d72323;
 
 @mixin text-gradient {
-    background: $gradient;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    // background: $gradient;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    // background-clip: text;
+
+    color: #d72323;
 }
